@@ -14,7 +14,7 @@ const ImageToText = () => {
     const api = async () => {
       try{
         setLoading(true);
-        const res = await axios.post('http://localhost:5000/find-complexity', {
+        const res = await axios.post('https://answerbot-backend.onrender.com/find-complexity', {
           prompt:"answer the question option only don't explain " + text,
         });
   
